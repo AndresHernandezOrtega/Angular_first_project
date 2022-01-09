@@ -1,0 +1,31 @@
+<footer>
+    <div class="footer-products">
+
+        <h2>Productos</h2>
+        <ul>
+            <li>Nuevos Productos</li>
+            <li>En oferta</li>
+            <li>Últimos productos</li>
+        </ul>
+    </div>
+
+    <div class="footer-About">
+
+        <h2>Acerca de PlatziStore</h2>
+
+        <ul>
+            <li>Sobre Nosotros</li>
+            <li>Nuestras tiendas</li>
+        </ul>
+    </div>
+
+    <div class="footer-contact">
+        <h2>Contacto</h2>
+
+        <mat-form-field>
+            <input matInput [formControl]="emailfield" type="email" placeholder="Correo">
+        </mat-form-field>
+        <button mat-button [disabled]="!emailfield.valid">Envíar</button>
+        
+    </div>
+</footer>
